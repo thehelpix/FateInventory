@@ -1,0 +1,7 @@
+name: VortexInventory
+version: ${project.version}
+main: ru.thehelpix.vortexinventory.VortexInv
+api-version: 1.13
+author: TheHelpix
+description: Vortex inventory block
+website: https://hdevhome.ru

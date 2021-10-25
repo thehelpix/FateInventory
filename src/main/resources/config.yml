@@ -1,0 +1,66 @@
+## В commands:
+## console: команда - выполнение команды от имени консоли
+## sender: команда - выполнение команды от имени игрока
+## placdeholders:
+## $nick - ник игрока
+prefix: "&e⋘&6Vortex &e&l⋗&e"
+
+type:
+  blocked:
+    name: "&cЗаблокировано"
+    messages:
+      move: "&4 &cСлот заблокирован."
+      drop: "&4 &cТы не можешь взаимодействовать со слотом, он заблокирован."
+      swap: "&cНельзя перемещать на другую руку!"
+      place: "&cНельзя ставить блок!"
+    commands:
+      - "console: chestcommands open menu $nick"
+      - "sender: c:Я пидор"
+    lore:
+      - "&4⚠ &cЗаблокировано &4⚠"
+  one_line:
+    name: "&cНедоступно"
+    messages:
+      move: "&5отсоси - &aпотом проси."
+      drop: "&5отсоси - &aпотом выбрасывай."
+      swap: "&cНельзя перемещать на другую руку!"
+      place: "&cНельзя ставить блок!"
+    commands:
+      - "console: chestcommands open menu $nick"
+      - "sender: c:Я пидор"
+    lore:
+      - "&cЧтобы получить весь доступ к 1 линии слотов надо &5отсосать Диме."
+  two_line:
+    name: "&cНедоступно"
+    messages:
+      move: "&5отсоси - &aпотом проси."
+      drop: "&5отсоси - &aпотом выбрасывай."
+      swap: "&cНельзя перемещать на другую руку!"
+      place: "&cНельзя ставить блок!"
+    commands:
+      - "console: chestcommands open menu $nick"
+      - "sender: c:Я пидор"
+    lore:
+      - "&cЧтобы получить доступ к 2 линии слотов надо &5отсосать Диме."
+  three_ender_line:
+    name: "&cНедоступно"
+    messages:
+      move: "&5отсоси - &aпотом проси."
+      drop: "&5отсоси - &aпотом выбрасывай."
+      swap: "&cНельзя перемещать на другую руку!"
+      place: "&cНельзя ставить блок!"
+    commands:
+      - "console: chestcommands open menu $nick"
+    lore:
+      - "&cЧтобы получить полный доступ к рюкзаку, надо отсосать Helpix'у"
+
+backpack:
+  close: "&5$nick&6, вы закрыли рюкзак!"
+  actionbar: "&6ПКМ &eОткрыть рюкзак"
+
+permissions:
+  all_slots: "vortexinv.allSlots"
+  one_line_slots: "vortexinv.oneLineSlots"
+  two_line_slots: "vortexinv.twoLineSlots"
+  blocked_slots: "vortexinv.blockedSlots"
+  three_slots_ender: "vortexinv.threeEnderSlots"
